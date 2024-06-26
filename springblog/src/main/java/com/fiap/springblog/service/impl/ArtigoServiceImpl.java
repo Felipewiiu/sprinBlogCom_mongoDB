@@ -64,4 +64,13 @@ public class ArtigoServiceImpl implements ArtigoService {
 
         return mongoTemplate.find(query, Artigo.class);
     }
+
+    @Override
+    public List<Artigo> findByDataEndStatus(LocalDateTime data, Integer status) {
+        // a data deve ser a data vindo do parâmetro e o status tambám
+        Query query = new Query(Criteria.where("data")
+                .is(data).and("status").is(status));
+        System.out.println(" ---->  chamou a service");
+        return mongoTemplate.find(query, Artigo.class);
+    }
 }

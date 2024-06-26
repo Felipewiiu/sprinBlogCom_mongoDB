@@ -17,4 +17,6 @@ public interface ArtigoService {
 
     public List<Artigo> findByDataGreaterThan(LocalDateTime data);
 
+    public List<Artigo> findByDataEndStatus(LocalDateTime data, Integer status);
+
 }

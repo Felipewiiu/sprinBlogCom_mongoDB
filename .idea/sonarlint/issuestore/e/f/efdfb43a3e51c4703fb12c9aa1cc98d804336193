@@ -1,7 +1,8 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‚ ³²„2J$1ae723b0-8976-414b-a6e5-55dec227aed6
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8İô€…2J$ea846d80-6f30-42a9-b302-1fe007d6653f
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‚ ³²„2J$d2f167a2-3053-42e4-8378-d7db4c7db491
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8İô€…2J$871ecf8b-7364-4d2e-aaee-ad8aafcd4af5
+r	java:S106I"+Replace this use of System.out by a logger.(üç«Çüÿÿÿÿ8ãô€…2J$75ef0b42-5d83-4b49-8b2e-41ed56edd3dd
 ˆ
-java:S1128"ERemove this unused import 'com.fiap.springblog.service.AutorService'.(¢ Ú£8Š ³²„2J$56c33d3b-78b5-401e-8c33-901bafb779a6
+java:S1128"ERemove this unused import 'com.fiap.springblog.service.AutorService'.(¢ Ú£8–É…2J$b0c29b43-9ba3-4aed-9d06-57c68942f792
