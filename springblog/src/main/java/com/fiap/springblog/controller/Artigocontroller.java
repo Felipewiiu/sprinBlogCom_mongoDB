@@ -39,9 +39,31 @@ public class Artigocontroller {
     public List<Artigo> findByDataEndStatus(
             @RequestParam("data") LocalDateTime data,
             @RequestParam("status") Integer status) {
-        System.out.println(" ---->  chamou a controller");
+
         return this.artigoService.findByDataEndStatus(data, status);
 
+    }
+
+    @PutMapping
+    public void atualizarArtigo(@RequestBody Artigo artigo) {
+        this.artigoService.atualizar(artigo);
+    }
+
+    @PutMapping("/{id}")
+    public void atualizarArtigo(
+            @PathVariable String id,
+            @RequestBody String novaURL){
+        this.artigoService.atualizarArtigo(id, novaURL );
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteById(@PathVariable String id) {
+        this.artigoService.deleteById(id);
+    }
+
+    @DeleteMapping("/delete")
+    public void deleteArtigoById(@RequestParam("Id") String id) {
+        this.artigoService.deleteArtigoById(id);
     }
 
 }

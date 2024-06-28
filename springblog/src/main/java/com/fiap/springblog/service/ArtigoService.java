@@ -19,4 +19,11 @@ public interface ArtigoService {
 
     public List<Artigo> findByDataEndStatus(LocalDateTime data, Integer status);
 
+    public void atualizar(Artigo updateArtigo);
+
+    public void atualizarArtigo(String id, String novaURL);
+
+    public void deleteById(String id);
+
+    public void deleteArtigoById(String id);
 }

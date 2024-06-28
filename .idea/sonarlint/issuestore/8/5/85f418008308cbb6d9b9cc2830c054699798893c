@@ -1,6 +1,7 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8›ŸÇ…2J$7ad9ef14-7de3-403a-b604-ca5c0deb5255
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ı¿ãğ…2J$1893ee9d-da57-42ab-ac29-4eb7f2edf16f
 ƒ
-java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(ª”»Œ8ŸÇ…2J$aa2d2647-101d-49f9-b940-5b4fc55bbbbf
-m	java:S106*"+Replace this use of System.out by a logger.(éœç“8¨´â…2J$1a6fe37d-9567-4024-85f4-96805f83743a
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(ª”»Œ8Àãğ…2J$2c6a90eb-4896-4827-93c8-8ff65547e165
+ƒ
+java:S46840"@Replace this persistent entity with a simple POJO or DTO object.(òÒÖ8ƒÀãğ…2J$9b48b1cb-cd91-4650-9a3c-3198de387bb4

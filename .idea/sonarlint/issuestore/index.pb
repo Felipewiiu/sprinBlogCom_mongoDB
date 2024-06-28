@@ -23,3 +23,9 @@ Lspringblog/src/main/java/com/fiap/springblog/controller/AutorController.java,6
 Lspringblog/src/main/java/com/fiap/springblog/repository/AutorRepository.java,f\7\f73dcee4ba8fea9bc0600e472969f02360eefab9
 
 Ospringblog/src/main/java/com/fiap/springblog/service/impl/AutorServiceImpl.java,d\9\d92abd00497fe1f618b7b69aef8de75723aa738b
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

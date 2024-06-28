@@ -10,7 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -73,4 +75,33 @@ public class ArtigoServiceImpl implements ArtigoService {
         System.out.println(" ---->  chamou a service");
         return mongoTemplate.find(query, Artigo.class);
     }
+
+    @Override
+    public void atualizar(Artigo updateArtigo) {
+        this.artigoRepository.save(updateArtigo);
+    }
+
+    @Override
+    public void atualizarArtigo(String id, String novaURL) {
+
+        //critério de busca pelo id
+        Query query = new Query(Criteria.where("_id").is(id));
+        //Definindo os campos que serão atualizados
+        Update update = new Update().set("url", novaURL);
+
+        this.mongoTemplate.updateFirst(query, update, Artigo.class);
+    }
+
+    @Override
+    public void deleteById(String id) {
+        this.artigoRepository.deleteById(id);
+    }
+
+    @Override
+    public void deleteArtigoById(String id) {
+        Query query = new Query(Criteria.where("_id").is(id));
+
+        mongoTemplate.remove(query, Artigo.class);
+    }
+
 }
