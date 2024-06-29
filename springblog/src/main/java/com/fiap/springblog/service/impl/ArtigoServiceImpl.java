@@ -104,4 +104,33 @@ public class ArtigoServiceImpl implements ArtigoService {
         mongoTemplate.remove(query, Artigo.class);
     }
 
+    @Override
+    public List<Artigo> findByStatusAndDataGreaterThan(Integer status, LocalDateTime data) {
+        return this.artigoRepository.findByStatusAndDataGreaterThan(status, data);
+    }
+
+    @Override
+    public List<Artigo> obterArtigoPorDataHora(LocalDateTime de, LocalDateTime ate) {
+        return this.artigoRepository.obterArtigoPorDataHora(de, ate);
+    }
+
+    @Override
+    public List<Artigo> encontrarArtigosComplexos(Integer status, LocalDateTime data, String titulo) {
+        Criteria criteria = new Criteria();
+
+        criteria.and("data").lte(data);
+
+        if(status != null){
+            criteria.and("status").is(status);
+        }
+
+        if(titulo != null && !titulo.isEmpty()){
+            criteria.and("titulo").is(titulo).regex(titulo, "i");
+        }
+
+        Query query = new Query(criteria);
+
+        return mongoTemplate.find(query, Artigo.class);
+    }
+
 }

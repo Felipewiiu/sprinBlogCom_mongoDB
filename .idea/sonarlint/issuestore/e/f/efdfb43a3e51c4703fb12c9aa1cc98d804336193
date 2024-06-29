@@ -1,10 +1,10 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Å‰×ğ…2J$7f1093a1-a68e-4af7-958c-3be2d179da38
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8™¼¢†2J$974d02fb-908d-4a6c-b449-b27e895d8850
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Æ‰×ğ…2J$cd614fa3-bea4-41fd-b6e8-003d1106d886
-r	java:S106K"+Replace this use of System.out by a logger.(üç«Çüÿÿÿÿ8Õ‰×ğ…2J$2d0c9a75-9b6f-442b-836e-65e5260eb260
-b
-java:S1128"ERemove this unused import 'com.fiap.springblog.service.AutorService'.(¢ Ú£8…Åúñ…2
-s
-java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅşÿÿÿÿ8…Åúñ…2
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8™¼¢†2J$f3bf625e-b492-4321-b76d-fbd2c3a112b1
+r	java:S106K"+Replace this use of System.out by a logger.(üç«Çüÿÿÿÿ8Ÿ¼¢†2J$10b3b8c2-bfee-404a-8cc2-d7a5e0164418
+ˆ
+java:S1128"ERemove this unused import 'com.fiap.springblog.service.AutorService'.(¢ Ú£8˜âÉ¢†2J$6edcef97-368a-4015-9ff2-ccddf4b6e436
+™
+java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅşÿÿÿÿ8˜âÉ¢†2J$d23722f3-eb03-4644-9ccf-74848709ca05

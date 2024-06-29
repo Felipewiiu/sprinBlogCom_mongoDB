@@ -3,6 +3,7 @@ package com.fiap.springblog.controller;
 import com.fiap.springblog.model.Artigo;
 import com.fiap.springblog.service.ArtigoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cglib.core.Local;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -52,8 +53,8 @@ public class Artigocontroller {
     @PutMapping("/{id}")
     public void atualizarArtigo(
             @PathVariable String id,
-            @RequestBody String novaURL){
-        this.artigoService.atualizarArtigo(id, novaURL );
+            @RequestBody String novaURL) {
+        this.artigoService.atualizarArtigo(id, novaURL);
     }
 
     @DeleteMapping("/{id}")
@@ -64,6 +65,30 @@ public class Artigocontroller {
     @DeleteMapping("/delete")
     public void deleteArtigoById(@RequestParam("Id") String id) {
         this.artigoService.deleteArtigoById(id);
+    }
+
+    @GetMapping("/status-maiordata")
+    public List<Artigo> findByStatusAndDataGreaterThan(
+            @RequestParam("status") Integer status,
+            @RequestParam("data") LocalDateTime data
+    ) {
+
+        return this.artigoService.findByStatusAndDataGreaterThan(status, data);
+    }
+
+    @GetMapping("/periodo")
+    public List<Artigo> obterArtigoPorDataHora(
+            @RequestParam("de") LocalDateTime de,
+            @RequestParam("ate") LocalDateTime ate) {
+        return this.artigoService.obterArtigoPorDataHora(de, ate);
+    }
+
+    @GetMapping("/artigo-complexo")
+    public List<Artigo> encontrarArtigosComplexos(
+            @RequestParam Integer status,
+            @RequestParam LocalDateTime data,
+            @RequestParam String titulo) {
+        return this.artigoService.encontrarArtigosComplexos(status, data, titulo);
     }
 
 }
