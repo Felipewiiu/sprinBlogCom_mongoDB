@@ -7,10 +7,13 @@ import com.fiap.springblog.repository.AutorRepository;
 import com.fiap.springblog.service.ArtigoService;
 import com.fiap.springblog.service.AutorService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
-import org.springframework.data.mongodb.core.query.Update;
+import org.springframework.data.mongodb.core.query.*;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -132,5 +135,35 @@ public class ArtigoServiceImpl implements ArtigoService {
 
         return mongoTemplate.find(query, Artigo.class);
     }
+
+    @Override
+    public Page<Artigo> listaArtigosPaginados(Pageable pageable) {
+        Sort sort = Sort.by("data").ascending();
+
+        Pageable paginacao = PageRequest.of(pageable.getPageNumber(), pageable.getPageSize(), sort);
+
+        return this.artigoRepository.findAll(pageable);
+    }
+
+    @Override
+    public List<Artigo> findByStatusOrderByTituloAsc(Integer status) {
+        return this.artigoRepository.findByStatusOrderByTituloAsc(status);
+    }
+
+    @Override
+    public List<Artigo> obterArtigoPorStatusComOrdenacao(Integer status) {
+        return this.artigoRepository.obterArtigoPorStatusComOrdenacao(status);
+    }
+
+    @Override
+    public List<Artigo> findByTexto(String searchTerm) {
+        TextCriteria criteria =
+                TextCriteria.forDefaultLanguage().matchingPhrase(searchTerm);
+
+        Query query = TextQuery.queryText(criteria).sortByScore();
+
+        return mongoTemplate.find(query, Artigo.class);
+    }
+
 
 }

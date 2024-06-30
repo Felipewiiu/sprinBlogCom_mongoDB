@@ -4,6 +4,10 @@ import com.fiap.springblog.model.Artigo;
 import com.fiap.springblog.service.ArtigoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cglib.core.Local;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -88,7 +92,25 @@ public class Artigocontroller {
             @RequestParam Integer status,
             @RequestParam LocalDateTime data,
             @RequestParam String titulo) {
+
         return this.artigoService.encontrarArtigosComplexos(status, data, titulo);
+    }
+
+    @GetMapping("/pagina-artigo")
+    public ResponseEntity<Page<Artigo>> listaArtigos(@PageableDefault(size = 5, sort = {"data"}) Pageable pageable) {
+        Page<Artigo> artigo = this.artigoService.listaArtigosPaginados(pageable);
+
+        return ResponseEntity.ok(artigo);
+    }
+
+    @RequestMapping("status-ordenado")
+    public List<Artigo> findByStatusOrderByTituloAsc(@RequestParam Integer status){
+        return this.artigoService.findByStatusOrderByTituloAsc(status);
+    }
+
+    @GetMapping("/status-query-ordenacao")
+    public List<Artigo> obterArtigoPorStatusComOrdenacao(@RequestParam Integer status){
+        return this.artigoService.obterArtigoPorStatusComOrdenacao(status);
     }
 
 }

@@ -1,10 +1,16 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8™¼¢†2J$974d02fb-908d-4a6c-b449-b27e895d8850
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8€•¥Ó†2J$85db34af-7487-4dd6-b990-d3c10d1e8c24
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8™¼¢†2J$f3bf625e-b492-4321-b76d-fbd2c3a112b1
-r	java:S106K"+Replace this use of System.out by a logger.(üç«Çüÿÿÿÿ8Ÿ¼¢†2J$10b3b8c2-bfee-404a-8cc2-d7a5e0164418
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8€•¥Ó†2J$ed4fa6dc-24e1-4a5c-bc88-98c99b5e41bc
+r	java:S106N"+Replace this use of System.out by a logger.(üç«Çüÿÿÿÿ8„•¥Ó†2J$c7000f12-bd16-4b96-81f9-6e4c46813257
+†
+java:S1854"=Remove this useless assignment to local variable "paginacao".( Áÿÿÿÿÿ8‰•¥Ó†2J$c5a16ff2-1982-4953-a5b6-4cc95471924b
+w
+java:S1481".Remove this unused "paginacao" local variable.( Áÿÿÿÿÿ8Š•¥Ó†2J$29457a87-9296-4cb0-bd18-141a17034dcd
 ˆ
-java:S1128"ERemove this unused import 'com.fiap.springblog.service.AutorService'.(¢ Ú£8˜âÉ¢†2J$6edcef97-368a-4015-9ff2-ccddf4b6e436
+java:S1128"ERemove this unused import 'com.fiap.springblog.service.AutorService'.(¢ Ú£8Ñ”°Ó†2J$885316d5-5ac3-4706-8dfa-bc9d2596ea94
+Œ
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8Ñ”°Ó†2J$33e648f7-bf08-4d94-836e-ec787dd81071
 ™
-java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅşÿÿÿÿ8˜âÉ¢†2J$d23722f3-eb03-4644-9ccf-74848709ca05
+java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅşÿÿÿÿ8Ñ”°Ó†2J$20e31827-6457-4f2f-b488-e3655d6f0379
