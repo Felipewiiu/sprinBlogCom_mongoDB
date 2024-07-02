@@ -1,9 +1,9 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8éÁÒ†2J$e5f6ecde-1674-4558-8c43-477f081ef6b3
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÛÖàƒ‡2J$5426616e-2ca2-4533-a646-d487af3739f2
 ƒ
-java:S4684""@Replace this persistent entity with a simple POJO or DTO object.(ª”»Œ8„éÁÒ†2J$dd13807c-ebdd-4546-8482-d1eeb954c5be
+java:S4684#"@Replace this persistent entity with a simple POJO or DTO object.(ª”»Œ8ßÖàƒ‡2J$8a4d98ed-b1d9-4d43-a72f-50f5fac4dfb3
 ƒ
-java:S46845"@Replace this persistent entity with a simple POJO or DTO object.(òÒÖ8…éÁÒ†2J$dbd9b17f-c412-4167-afdf-60ccc1cd799e
-„
-java:S1128"ARemove this unused import 'org.springframework.cglib.core.Local'.(ÁÒû8¥†îÓ†2J$03771ca6-d44d-44d1-a058-34c58b7f775b
+java:S46846"@Replace this persistent entity with a simple POJO or DTO object.(òÒÖ8àÖàƒ‡2J$04661484-eac6-4c7f-be3a-1d8009d2244b
+^
+java:S1128"ARemove this unused import 'org.springframework.cglib.core.Local'.(ÁÒû8™Ü·†‡2

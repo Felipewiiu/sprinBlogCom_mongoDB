@@ -29,3 +29,7 @@ Ospringblog/src/main/java/com/fiap/springblog/service/impl/AutorServiceImpl.java
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+y
+Ispringblog/src/main/java/com/fiap/springblog/model/ArtigoStatusCount.java,7\d\7d690dee7f66a5f024941ad6fdff9b2796cd3116
+x
+Hspringblog/src/main/java/com/fiap/springblog/model/AutorTotalArtigo.java,b\a\babbc31d681013d14375d8ba18e95bb3be2783b8
